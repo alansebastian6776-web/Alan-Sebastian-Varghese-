@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Sebastian | Portfolio</title>
+    <style>
+        /* BASIC STYLING: Clean, high-contrast, and visually appealing [cite: 10, 13] */
+        body {
+            background: #000; 
+            color: #fff;      
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        /* NEON RED THEME: High motion feel with glow effects [cite: 13, 18] */
+        h1, h2 {
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #990000; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        section {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 30px;
+            padding: 25px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            background: rgba(20, 20, 20, 0.8);
+            transition: transform 0.3s ease;
+        }
+
+        /* INTERACTIVE ELEMENTS: Hover effects for UX [cite: 18] */
+        section:hover {
+            transform: scale(1.02);
+            border-color: #ff0000;
+        }
+      
+        a {
+            color: #ff0000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            text-shadow: 0 0 15px #ff0000;
+            color: #fff;
+        }
+
+        .btn {
+            border: 1px solid #ff0000;
+            padding: 10px 20px;
+            display: inline-block;
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        /* RESPONSIVENESS: Media queries for mobile devices [cite: 15, 16] */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            section { width: 95%; padding: 15px; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <section id="about">
+            <h1>Introduction / About Me</h1>
+            <p>I am Alan Sebastian, a developer focused on creating simple, responsive, and visually appealing web experiences[cite: 3]. I specialize in minimalist design paired with high-energy neon aesthetics.</p>
+        </section>
+    </header>
+
+    <main>
+        <section id="skills">
+            <h2>Skills and Expertise</h2>
+            <ul>
+                <li><strong>HTML5:</strong> Semantic structuring for accessibility.</li>
+                <li><strong>CSS3:</strong> Responsive design and custom neon styling[cite: 12].</li>
+                <li><strong>UI/UX:</strong> Creating clean layouts that are easy to navigate[cite: 10].</li>
+                <li><strong>Responsiveness:</strong> Utilizing media queries for all screen sizes[cite: 16].</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects or Work Experience</h2>
+            <p><strong>Personal Portfolio Project:</strong> A functional and professional branding page built with HTML, CSS, and JavaScript[cite: 23].</p>
+            <p><strong>Neon UI Kit:</strong> Developing interactive elements like buttons and hover effects for enhanced user experience[cite: 18].</p>
+            <a href="https://github.com" class="btn" target="_blank">View GitHub Work </a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:alansebastian6776@gmail.com">alansebastian6776@gmail.com</a></p>
+            <p>Connect: <a href="https://www.linkedin.com/in/alan-sebastian-538a673a2" target="_blank">LinkedIn Profile </a></p>
+        </section>
+    </main>
+
+    <footer style="font-size: 0.7rem; color: #555; text-align: center; margin-top: 20px;">
+        <p>Built with Semantic HTML for keyboard navigation and high-contrast readability.</p>
+    </footer>
+
+    <script>
+        /* Simple interaction tracking for links [cite: 17, 19] */
+        document.querySelectorAll('a').forEach(link => {
+            link.onclick = (e) => {
+                console.log("User navigating to: " + link.href);
+            };
+        });
+    </script>
+
+</body>
+</html>
